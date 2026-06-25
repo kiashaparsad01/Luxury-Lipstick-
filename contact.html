@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Place Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>💄 Place Your Order</h1>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="offers.html">Offers</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="form-container">
+
+            <h2>Checkout</h2>
+
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+
+            <select id="lipstick">
+                <option value="Classic Red">Classic Red</option>
+                <option value="Soft Pink">Soft Pink</option>
+                <option value="Nude Beauty">Nude Beauty</option>
+                <option value="Cherry Shine">Cherry Shine</option>
+            </select>
+
+            <input type="number" id="quantity" min="1" max="10" value="1" placeholder="Quantity">
+
+            <button onclick="placeOrder()">Submit Order</button>
+
+            <div id="orderMessage"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
